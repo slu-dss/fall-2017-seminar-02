@@ -1,4 +1,4 @@
-fall-2017-seminar-01 <img src="https://raw.githubusercontent.com/slu-dss/fall-2017-seminar-01/sources/logo.png" align="right" />
+fall-2017-seminar-02 <img src="https://raw.githubusercontent.com/slu-dss/fall-2017-seminar-01/sources/logo.png" align="right" />
 ===========================================================
 
 ### Repository Contents
@@ -11,23 +11,23 @@ This repository contains files for:
 -   `README.md` - seminar resources
 
 ## Resources
-### `R` and RStudio
-*   [Download `R`](https://cloud.r-project.org) - Windows users should download `base`
-*   [Download RStudio](https://www.rstudio.com/products/rstudio/download/#download)
-*   [RStudio Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/rstudio-IDE-cheatsheet.pdf)
-*   [R Markdown Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/rmarkdown-cheatsheet-2.0.pdf)
-*   [Introduction to R YouTube video](https://www.youtube.com/watch?v=eQRjfpoFP0U&t) from Chris's statistics course at SLU
-*   [Structuring Notebooks YouTube video](https://www.youtube.com/watch?v=Rb1jsVRsnbk) from Chris's statistics course at SLU
-
-### `tidyverse` Resources
-*   [`tidyverse` website](http://tidyverse.org)
-*   [R for Data Science](http://r4ds.had.co.nz) - by Hadley Wickham and Garrett Grolemund
-
 ### `ggplot2` Resources
 *   [Data Visualization chapter](http://r4ds.had.co.nz/data-visualisation.html) in [R for Data Science](http://r4ds.had.co.nz) - by Hadley Wickham and Garrett Grolemund
 *   [Data Visualization for Social Science](http://socviz.co) - by Kieran Healy
 *   [Data Viusalization Cheat Sheet](https://github.com/rstudio/cheatsheets/raw/master/source/pdfs/ggplot2-cheatsheet-2.1.pdf)
 *   `ggplot2` Introductory YouTube videos ([Part 1](https://www.youtube.com/watch?v=eT_6tw4fWRE&t) and [Part 2](https://www.youtube.com/watch?v=EHZ2JtVCDCQ)) from Chris's statistics course at SLU
+
+*   [`geom_histogram()`](http://ggplot2.tidyverse.org/reference/geom_histogram.html)
+*   [`geom_point()`](http://ggplot2.tidyverse.org/reference/geom_point.html)
+*   [`geom_polygon()`](http://ggplot2.tidyverse.org/reference/geom_polygon.html)
+
+### `broom` Resources
+*   [`broom` Intro](https://github.com/tidyverse/broom/blob/master/README.md)
+*   [`broom` Vignette](https://cran.r-project.org/web/packages/broom/vignettes/broom.html)
+
+### Basic GIS Resources
+*   [Shapefile (Wikipedia)](https://en.wikipedia.org/wiki/Shapefile)
+*   [Polygon Feature Class](http://wiki.gis.com/wiki/index.php/Polygon_Feature_Class)
 
 ## About the SLU DSS
 ### Fall 2017 - GIS in `R`
