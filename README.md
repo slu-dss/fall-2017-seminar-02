@@ -3,10 +3,18 @@ fall-2017-seminar-02 <img src="https://raw.githubusercontent.com/slu-dss/fall-20
 
 ### Repository Contents
 This repository contains files for:
+-   `fall-2017-seminar-02.nb.html` - R notebook output for seminar
+-   `fall-2017-seminar-02.Rmd` - R notebook source code for seminar
+-   `fall-2017-seminar-02.Rproj` - R project for seminar
+-   `fall-2017-seminar-02-handout.pdf` - handout
+-   `missouriTract` - shapefile of census tracts in Missouri
+-   `missouriTract.png` - image of census tracts in Missouri
+-   `missouriTractDetail.png` - image of census tracts in the metro St. Louis area
+-   `polygon.png` - image of a theoretical polygon
+-   `stlInsurance.csv` - tabular data of insurance rates in the City of St. Louis
+-   `stlLead.csv` - tabular data of elevated blood lead level test results in the City of St. louis
+-   `stlTract` - shapefile of census tracts in the City of St. Louis
 -   `.gitignore`
--   `fall-2017-seminar-01.Rmd` - R notebook for seminar
--   `fall-2017-seminar-01.Rproj` - R project for seminar
--   `fall-2017-seminar-01-handout.pdf` - handout
 -   `LICENSE.md`
 -   `README.md` - seminar resources
 
