@@ -6,31 +6,30 @@ authors: Chris & Christy
 
 ## R Packages
 
-For this week's session, we will need the `tidyverse` and a number of other packages packages. To install new packages, we use the `install.packages()` function where the package name is written inside the parantheses in double quotes - "package name". For the "tidyverse" package, the installation function would look like this:
+For this week's session, we will need the `tidyverse` and a number of other packages. To install new packages, we use the `install.packages()` function where the package name is written inside the parantheses in double quotes - "package name". For the "tidyverse" package, the installation function would look like this:
 
 ```{r}
 install.packages("tidyverse")
 ```
 
-To work specifically with spatial data, we need the `rgdal` and `rgeos` packages installed.
+To work specifically with spatial data, we need the `rgdal`, `rgeos` and `maptools` packages installed.
 
 ```{r}
 
 ```
 
-You will need to load the `rgdal` package to work with spatial data, but `rgeos` just needs to be installed and not explicitly loaded. So, we'll use the `library()` function to load `rgdal`:
+You will need to load the `rgdal` and `maptools` packages to work with spatial data, but `rgeos` just needs to be installed and not explicitly loaded. So, we'll use the `library()` function to load `rgdal` and `maptools`:
 
 ```{r}
-library("rgdal")
+library(rgdal)
+library(maptools)
 ```
 
-Now load the `ggplot2` and `broom` packages, which are both part of the `tidyverse`:
+Next, load the `ggplot2` and `broom` packages, which are both part of the `tidyverse`. We recommend loading `tidyverse` packages individually as opposed to using the omnibus `library("tidyverse")` function. This makes your code more explicit and the dependencies clearer for replication purposes.
 
 ```{r}
 
 ```
-
-We recommend loading `tidyverse` packages individually as opposed to using the omnibus `library("tidyverse")` function. This makes your code more explicit and the dependencies clearer for replication purposes.
 
 ## Importing Tabular Data 
 
@@ -54,7 +53,7 @@ There are a wide variety of tools in a number of different `R` packages for work
 
 ## Basic plots with `ggplot2`
 
-`R` offers many ways of making sophisticated plots, including the package `ggplot2`. We will use this package (already loaded as part of `tidy verse`) to makes some plots without worrying too much about the syntax of the commands. For more information on `ggplot2`, see Wickham (2015). 
+`R` offers many ways of making sophisticated plots, including the package `ggplot2`. We will use this package (already loaded as part of `tidy verse`) to make some plots without worrying too much about the syntax of the commands. For more information on `ggplot2`, see Wickham (2015).  We've also provided links to other resources in the `README.md` file included with this week's repository.
 
 ### Histograms
 
@@ -132,7 +131,7 @@ Polygons are commonly used to represent administrative divisions, such as countr
 knitr::include_graphics('missouriTract.png')
 ```
 
-You can see that the geographical size of census tracts, because they are define by population and not area, vary widely. This is a close-up of the census tracts in the St. Louis metropolitan area:
+You can see that the geographical size of census tracts, because they are defined by population and not area, vary widely. This is a close-up of the census tracts in the St. Louis metropolitan area:
 
 ```{r echo=FALSE}
 knitr::include_graphics('missouriTractDetail.png')
@@ -204,7 +203,8 @@ We can create simple maps of just the census tracts using `ggplot2` and the `geo
 
 ```{r}
 ggplot() +
-  geom_polygon(data = missouriTract, mapping = aes(x = long, y = lat)) 
+  geom_polygon(data = missouriTract, mapping = aes(x = long, y = lat, group = id)) +
+  coord_map()
 ```
 
 Now try plotting just the census tracts in St. Louis using the `stlTract` data:
